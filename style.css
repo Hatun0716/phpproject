@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    background-color: #DE5927;
+}
+.nav{
+    display: flex;
+    padding:2% 6%;
+    justify-items: space-between;
+    align-items: center;
+}
+.nav-links{flex: 1; text-align: right;}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+.text-box{width: 90% ; position: absolute; top: 11%;right: 22%;  font-size: 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.course-info{background-color: white; height: 50vh; width: 100%;}
+
+@media(max-width:700px){}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 220px;
+    height: 400px;
+    background: white;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+
+  }
+.card-image{
+    background-color: rgba(0,0,0,0.2);
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-image h2{
+    text-align: center;
+    position: relative;
+    top: 180px;
+}
+.card-image p{
+
+    position: relative;
+    top: 190px;
+}
+.html1{
+    background-image: url('./images/Programming.png');
+}
+.css1{
+    background-image: url('./images/Programming.png');
+}
+.javascript1{
+    background-image: url('./images/Programming.png');
+}
+.card p{padding: 10px;}
+.card a{background-color: black; color: white; padding: 12px 20px; display: block; text-align: center; border-radius: 5px;color: #DE5927;}
+
+
+
+.heading{color: black; font-size: 40px; text-align: center; padding: 10px;}
+.video-box{display: grid; grid-template-columns: 2fr 1fr; gap: 15px; align-items: flex-start; padding:5px 5% ;}
+.video-box .main-video{background: white; border-radius: 5px; padding: 10px;}
+.video-box .main-video video{width: 100%; background: 5px;}
+.video-box .main-video .title{color: #DE5927; font-size: 23px; padding-top: 15px;padding-bottom: 15px; }
+.video-box .video-list{background: white; border-radius: 5px; height: 720px; overflow-y: scroll;}
+.video-box .video-list::-webkit-scrollbar-track{background: #ccc;border-radius: 50px; }
+.video-box .video-list::-webkit-scrollbar-thumb{background: #666;border-radius: 50px; }
+.video-box .video-list .vid{display: flex; align-items: center; gap: 15px; background: #f7f7f7f7; border-radius: 5px;margin: 10px; padding:10px ; border: 1px solid rgb(0, 0, 0,.1); cursor: pointer;}
+.video-box .video-list .vid:hover{background: #eee;}
+.video-box .video-list .vid.active{background:#5563FF ;}
+.video-box .video-list .vid.active .title{color:#fff ;}
+.video-box .video-list .vid .title{color:#DE5927 ; font-size: 17px;}
+.video-box .video-list .vid video{width: 50% ;border-radius: 5px;}
+
+@media(max-width:991px){
+    .video-box{ grid-template-columns: 1.5fr 1fr;  padding:10px ;}
+
+}
+@media(max-width:758px){
+    .video-box{ grid-template-columns: 1fr;  ;}
+
+}
