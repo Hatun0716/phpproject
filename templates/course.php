@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Project</title>
+    <style>.btnquiz{ }</style>
 </head>
 <body>
     <section class="header">
         <nav>
             <div class="nav-links">
                 <ul>
-                    <li><a href="layout.html">Home</a></li>
-                    <li><a href="login.html">SignOut</a></li>
+                    <li><a href="layout.php">Home</a></li>
+                    <li><a href="login.php">SignOut</a></li>
                 </ul>
             </div>
             <h3 class="heading">HTML</h3>
@@ -21,11 +22,11 @@
                 <div class="main-video">
                 <div class="video">
                     <video  controls src="../vidoes/Introduction and What I Need To Learn.mp4" ></video>
-                    <h3 class="title" >01.What is HTML</h3>
+                    <h3 class="title" >01.Introduction and What I Need To Learn</h3><br>
+                    <a href="quiz.php"><button style="width: 90px; height: 40px; text-align: center; border-radius: 5px;color: #DE5927;">Quiz</button></a>
                 </div>
             </div>
-        
-            <div class="video-list">
+            </form>            <div class="video-list">
                 <div class="vid active">
                     <video src="../vidoes/Introduction and What I Need To Learn.mp4"></video>
                     <h3 class="title">01.Introduction and What I Need To Learn</h3>

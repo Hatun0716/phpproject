@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +13,8 @@
         <nav>
             <div class="nav-links">
                 <ul>
-                    <li><a href="layout.html">Home</a></li>
-                    <li><a href="login.html">SignOut</a></li>
+                    <li><a href="layout.php">Home</a></li>
+                    <li><a href="login.php">SignOut</a></li>
                 </ul>
             </div>
             <img style="position: absolute; right:90px;" src="../images/Programming.png" alt="the image is progrmming icon">
@@ -35,20 +36,20 @@ we are CCS college student.
             <div class="card">
                 <div class="card-image html1">
                 <h2>HTML Course</h2>
-                <p>HTML is the standard markup language for Web pages,With HTML you can create your own Website.HTML is easy to learn - You will enjoy it! <a href="course.html">Click Here</a> </p> 
+                <p>HTML is the standard markup language for Web pages,With HTML you can create your own Website.HTML is easy to learn - You will enjoy it! <a href="course.php">Click Here</a> </p> 
                 
                 </div>
             </div>
             <div class="card">
                 <div class="card-image css1">
                 <h2>CSS Course</h2>
-                <p>CSS stands for Cascading Style Sheets,describes how HTML elements are to be displayed on screen, paper, or in other media <a href="course.html">Click Here</a></p>    
+                <p>CSS stands for Cascading Style Sheets,describes how HTML elements are to be displayed on screen, paper, or in other media <a href="course.php">Click Here</a></p>    
                 </div>
             </div>
             <div class="card">
                 <div class="card-image javascript1">
                 <h2>JavaScript Course</h2>
-                <p>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web and easy to learn.<a href="course.html">Click Here</a></p>  
+                <p>JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web and easy to learn.<a href="course.php">Click Here</a></p>  
                 </div>
             </div>
 

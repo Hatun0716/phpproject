@@ -90,7 +90,8 @@
     background-image: url('./images/Programming.png');
 }
 .card p{padding: 10px;}
-.card a{background-color: black; color: white; padding: 12px 20px; display: block; text-align: center; border-radius: 5px;color: #DE5927;}
+.card a{background-color: black;  padding: 12px 20px; display: block; text-align: center; border-radius: 5px;color: #DE5927;}
+
 
 
 
@@ -117,3 +118,4 @@
     .video-box{ grid-template-columns: 1fr;  ;}
 
 }
+
