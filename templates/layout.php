@@ -14,6 +14,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="layout.php">Home</a></li>
+                    <li><a href="profile.php">profile</a></li>
                     <li><a href="login.php">SignOut</a></li>
                 </ul>
             </div>

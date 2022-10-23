@@ -23,7 +23,6 @@
                 <div class="video">
                     <video  controls src="../vidoes/Introduction and What I Need To Learn.mp4" ></video>
                     <h3 class="title" >01.Introduction and What I Need To Learn</h3><br>
-                    <a href="quiz.php"><button style="width: 90px; height: 40px; text-align: center; border-radius: 5px;color: #DE5927;">Quiz</button></a>
                 </div>
             </div>
             </form>            <div class="video-list">
