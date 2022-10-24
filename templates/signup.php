@@ -16,7 +16,7 @@
   .input-group { margin: 10px 0px 10px 0px;}
   .input-group label { display: block; text-align: left; margin: 3px;}
   .input-group input {height: 30px;width: 93%;padding: 5px 10px;font-size: 16px;border-radius: 5px;border: 1px solid gray; }
-  .btn { padding: 10px; font-size: 15px; color: white; background: #5F9EA0; border: none; border-radius: 5px;}
+  .btn { padding: 10px; font-size: 15px; color: white; background: #5F9EA0; border: none; border-radius: 5px; }
     </style>
     <title>Project</title>
 </head>
@@ -51,7 +51,14 @@
         <label>Male</label>
       
   	  <input type="radio" name="gender"  value="Female">
-        <label>Female</label>
+        <label>Female</label><br>
+
+		<label>Select courses you like:</label>
+  	  <input type="radio" name="courses" value="CSS">
+        <label>CSS</label>
+      
+  	  <input type="radio" name="courses"  value="JAVASCRIBT">
+        <label>JAVASCRIBT</label>
   	
 
 

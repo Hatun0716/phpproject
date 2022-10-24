@@ -14,6 +14,7 @@ if (isset($_POST['reg_user'])) {
   // receive all input values from the form
   $name = mysqli_real_escape_string($db, $_POST['name']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
+  $courses = mysqli_real_escape_string($db, $_POST['courses']);
   $gender = mysqli_real_escape_string($db, $_POST['gender']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
@@ -22,6 +23,7 @@ if (isset($_POST['reg_user'])) {
   // by adding (array_push()) corresponding error unto $errors array
   if (empty($name)) { array_push($errors, "Username is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
+  if (empty($courses)) { array_push($errors, "Gender is required"); }
   if (empty($gender)) { array_push($errors, "Gender is required"); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
   if ($password_1 != $password_2) {
@@ -48,8 +50,8 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
-  	$query = "INSERT INTO register (name, email, password,gender) 
-  			  VALUES('$name', '$email', '$password','$gender')";
+  	$query = "INSERT INTO register (name, email, password,gender,courses) 
+  			  VALUES('$name', '$email', '$password','$gender','$courses')";
   	mysqli_query($db, $query);
   	$_SESSION['name'] = $name;
   	$_SESSION['success'] = "You are now logged in";

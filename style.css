@@ -7,7 +7,7 @@
     height: 50vh;
     width: 100%;
     margin: auto;
-    background-color: #DE5927;
+    background-color: #7C64E7;;
 }
 .nav{
     display: flex;
@@ -90,7 +90,7 @@
     background-image: url('./images/Programming.png');
 }
 .card p{padding: 10px;}
-.card a{background-color: black;  padding: 12px 20px; display: block; text-align: center; border-radius: 5px;color: #DE5927;}
+.card a{background-color: black;  padding: 12px 20px; display: block; text-align: center; border-radius: 5px;color: #7C64E7;;}
 
 
 
@@ -99,7 +99,7 @@
 .video-box{display: grid; grid-template-columns: 2fr 1fr; gap: 15px; align-items: flex-start; padding:5px 5% ;}
 .video-box .main-video{background: white; border-radius: 5px; padding: 10px;}
 .video-box .main-video video{width: 100%; background: 5px;}
-.video-box .main-video .title{color: #DE5927; font-size: 23px; padding-top: 15px;padding-bottom: 15px; }
+.video-box .main-video .title{color: #7C64E7;; font-size: 23px; padding-top: 15px;padding-bottom: 15px; }
 .video-box .video-list{background: white; border-radius: 5px; height: 720px; overflow-y: scroll;}
 .video-box .video-list::-webkit-scrollbar-track{background: #ccc;border-radius: 50px; }
 .video-box .video-list::-webkit-scrollbar-thumb{background: #666;border-radius: 50px; }
@@ -107,7 +107,7 @@
 .video-box .video-list .vid:hover{background: #eee;}
 .video-box .video-list .vid.active{background:#5563FF ;}
 .video-box .video-list .vid.active .title{color:#fff ;}
-.video-box .video-list .vid .title{color:#DE5927 ; font-size: 17px;}
+.video-box .video-list .vid .title{color:#7C64E7; ; font-size: 17px;}
 .video-box .video-list .vid video{width: 50% ;border-radius: 5px;}
 
 @media(max-width:991px){
