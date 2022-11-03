@@ -14,11 +14,12 @@ if (isset($_POST['reg_user'])) {
   // receive all input values from the form
   $name = mysqli_real_escape_string($db, $_POST['name']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
-  $courses = mysqli_real_escape_string($db, $_POST['courses']);
+  $courses=  $_POST['course'];
   $gender = mysqli_real_escape_string($db, $_POST['gender']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
-
+  //convort courses array into strings sto that will store in database
+  $allcourses=implode(", ",$courses);
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
   if (empty($name)) { array_push($errors, "Username is required"); }
@@ -29,6 +30,7 @@ if (isset($_POST['reg_user'])) {
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
   }
+
 
   // first check the database to make sure 
   // a user does not already exist with the same name and/or email
@@ -51,7 +53,7 @@ if (isset($_POST['reg_user'])) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
   	$query = "INSERT INTO register (name, email, password,gender,courses) 
-  			  VALUES('$name', '$email', '$password','$gender','$courses')";
+  			  VALUES('$name', '$email', '$password','$gender','$allcourses')";
   	mysqli_query($db, $query);
   	$_SESSION['name'] = $name;
   	$_SESSION['success'] = "You are now logged in";

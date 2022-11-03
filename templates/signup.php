@@ -54,12 +54,14 @@
         <label>Female</label><br>
 
 		<label>Select courses you like:</label>
-  	  <input type="radio" name="courses" value="CSS">
+  	  <input type="checkbox" name="course[]" value="CSS">
         <label>CSS</label>
       
-  	  <input type="radio" name="courses"  value="JAVASCRIBT">
+  	  <input type="checkbox" name="course[]"  value="JAVASCRIBT">
         <label>JAVASCRIBT</label>
-  	
+  	      
+  	  <input type="checkbox" name="course[]"  value="HTML">
+        <label>HTML</label>
 
 
   	<div class="input-group">
